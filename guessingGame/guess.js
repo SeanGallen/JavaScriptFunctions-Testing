@@ -2,11 +2,12 @@ var prompt = require('prompt');
 var random = Math.random();
 var multi = random * 100;
 var number = Math.round(multi);
+var counter = 0;
 
 prompt.start();
 
 
-console.log('Guess a number between 1 - 100');
+console.log('Guess a number between 1 - 100 \nYou have 4 guesses.\n');
 function get() {
   prompt.get(['guess'], function (err, result) {
     if (err) { return onErr(err); }
@@ -24,10 +25,15 @@ get();
 
 function guessingGame(guess, number)
 {
+  counter++;
+  if (counter === 4)
+  {
+   return ('Thank you for playing');
+  }
   if (guess < number)
   {
     console.log('Higher ');
-    return get();
+    get();
   }
   else if (guess > number)
   {
@@ -39,5 +45,6 @@ function guessingGame(guess, number)
     return('Great Job! We both picked ' + number);
   }
 }
+
 
 

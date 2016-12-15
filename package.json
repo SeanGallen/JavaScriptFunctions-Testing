@@ -1,0 +1,29 @@
+{
+  "name": "js_problems",
+  "version": "1.0.0",
+  "description": "Javascript problems and testing",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "prompt": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeanGallen/JavaScriptFunctions-Testing.git"
+  },
+  "author": "Sean Gallen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeanGallen/JavaScriptFunctions-Testing/issues"
+  },
+  "homepage": "https://github.com/SeanGallen/JavaScriptFunctions-Testing#readme"
+}

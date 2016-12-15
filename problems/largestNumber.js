@@ -4,11 +4,11 @@
 
 // 10,12,15,3,5, 22, 2
 
-var numArray = [10, 12, 15, 3, 5, 22, 2];
+let numArray = [10, 12, 15, 3, 5, 22, 2];
 
-var sortedArray = numArray.sort(function(a, b) {
+let  sortedArray = numArray.sort((a, b) => {
   return a - b;
 });
 
-var largestNumber = sortedArray[sortedArray.length -1];
+let largestNumber = sortedArray[sortedArray.length -1];
 console.log(largestNumber);

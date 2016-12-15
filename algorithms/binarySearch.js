@@ -1,14 +1,14 @@
-var list = [1, 3, 4, 67, 44, 33, 22]
-var sortedList = list.sort(function (a, b) {
+let list = [1, 3, 4, 67, 44, 33, 22]
+let sortedList = list.sort((a, b) => {
   return a - b;
 });
 
-function binarySearch(listTest, item) {
-  var low = 0;
-  var high = listTest.length - 1;
+let binarySearch = (listTest, item) => {
+  let low = 0;
+  let high = listTest.length - 1;
   while (low <= high)
   {
-    var mid = (low + high)/2;
+    let mid = (low + high)/2;
     guess = listTest[mid];
     if (guess === item)
     {

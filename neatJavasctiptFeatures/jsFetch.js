@@ -5,5 +5,5 @@ fetch('https://www.nytimes.com', {
     }).then(function(response) {
   console.log(response.headers._headers.date[0]);
 }).catch(function(err) {
-      console.log(err);
+      console.log("Error Error " + err);
     });
